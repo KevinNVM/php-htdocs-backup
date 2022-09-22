@@ -1,0 +1,416 @@
+CRITICAL - 2022-06-11 00:32:13 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-11 00:53:37 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-11 00:53:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(137): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(70): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(45): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('C:\\', 'before')
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:02:20 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:21 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:25 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:46 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:47 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:48 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:49 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 01:05:49 --> Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 02:17:18 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin/delete/1', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 04:57:54 --> Too few arguments to function App\Controllers\User::editProfile(), 0 passed in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\User.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 05:08:57 --> Invalid file: user/editProfile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/editProfile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/editProfile', [], true)
+ 3 APPPATH\Controllers\User.php(35): view('user/editProfile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrg')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 06:11:26 --> Trying to get property 'username' of non-object
+in APPPATH\Controllers\User.php on line 38.
+ 1 APPPATH\Controllers\User.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Controllers\\User.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrg')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:04:01 --> Invalid file: users/update.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/update.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('users/update', [], true)
+ 3 APPPATH\Controllers\User.php(42): view('users/update', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:04:21 --> Invalid file: users/update.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/update.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('users/update', [], true)
+ 3 APPPATH\Controllers\User.php(42): view('users/update', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:30:02 --> Call to a member function getErrors() on null
+in APPPATH\Controllers\User.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:30:15 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 71.
+ 1 APPPATH\Views\user\profile.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(42): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:31:10 --> Undefined property: CodeIgniter\Validation\Validation::$hasError
+in APPPATH\Controllers\User.php on line 40.
+ 1 APPPATH\Controllers\User.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Validation\\Validation::$hasError', 'APPPATH\\Controllers\\User.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:31:13 --> Too few arguments to function CodeIgniter\Validation\Validation::hasError(), 0 passed in C:\xampp\htdocs\ci-crud\app\Controllers\User.php on line 40 and exactly 1 expected
+in SYSTEMPATH\Validation\Validation.php on line 642.
+ 1 APPPATH\Controllers\User.php(40): CodeIgniter\Validation\Validation->hasError()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:32:04 --> Undefined variable: errors
+in APPPATH\Views\user\profile.php on line 1.
+ 1 APPPATH\Views\user\profile.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\user\\profile.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:32:05 --> Undefined variable: errors
+in APPPATH\Views\user\profile.php on line 1.
+ 1 APPPATH\Views\user\profile.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\user\\profile.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:33:08 --> Undefined variable: errors
+in APPPATH\Views\user\profile.php on line 1.
+ 1 APPPATH\Views\user\profile.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\user\\profile.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:34:08 --> Undefined variable: errors
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:34:28 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:30 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:31 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:31 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:31 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:31 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:31 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:32 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 68.
+ 1 APPPATH\Views\user\profile.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:41:44 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 71.
+ 1 APPPATH\Views\user\profile.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:56:48 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\profile.php on line 78.
+ 1 APPPATH\Views\user\profile.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\profile.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 10:59:56 --> Undefined variable: validation
+in APPPATH\Views\user\profile.php on line 61.
+ 1 APPPATH\Views\user\profile.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\user\\profile.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(42): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 11:02:23 --> Argument 2 passed to CodeIgniter\Validation\FileRules::is_image() must be of the type string, null given, called in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\Validation\Validation.php on line 305
+in SYSTEMPATH\Validation\FileRules.php on line 114.
+ 1 SYSTEMPATH\Validation\Validation.php(305): CodeIgniter\Validation\FileRules->is_image(null, null)
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('user_profile', 'user_profile', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 11:03:22 --> Too few arguments to function CodeIgniter\Validation\Validation::hasError(), 0 passed in C:\xampp\htdocs\ci-crud\app\Views\user\profile.php on line 1 and exactly 1 expected
+in SYSTEMPATH\Validation\Validation.php on line 642.
+ 1 APPPATH\Views\user\profile.php(1): CodeIgniter\Validation\Validation->hasError()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(43): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 11:27:21 --> Cannot use object of type CodeIgniter\I18n\Time as array
+in SYSTEMPATH\Validation\Validation.php on line 614.
+ 1 SYSTEMPATH\Validation\Validation.php(133): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\User.php(40): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 11:32:36 --> 2022-06-11 23:32:36 is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('2022-06-11 23:32:36')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('updated_at', 'updated_at', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(40): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-11 11:35:34 --> in_array() expects parameter 2 to be array, int given
+in SYSTEMPATH\Validation\Validation.php on line 210.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, int given', 'SYSTEMPATH\\Validation\\Validation.php', 210, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(210): in_array('if_exist', 1655008534, true)
+ 3 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('updated_at', 'updated_at', null, 1655008534, [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\User.php(40): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

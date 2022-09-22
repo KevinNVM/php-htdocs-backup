@@ -1,0 +1,1276 @@
+CRITICAL - 2022-06-10 04:27:10 --> Uncaught ErrorException: Use of undefined constant baseurl - assumed 'baseurl' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\ci-crud\app\Views\errors\html\error_404.php:11
+Stack trace:
+#0 C:\xampp\htdocs\ci-crud\app\Views\errors\html\error_404.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\Debug\Exceptions.php(239): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\Debug\Exceptions.php(242): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#3 C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\Debug\Exceptions.php(126): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+in APPPATH\Views\errors\html\error_404.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-06-10 04:30:24 --> Use of undefined constant baseurl - assumed 'baseurl' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\auth\login.php on line 13.
+ 1 APPPATH\Views\auth\login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant baseurl - assumed \'baseurl\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Views\\auth\\login.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Views\\auth\\login', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(429): view('App\\Views\\auth\\login', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(57): Myth\Auth\Controllers\AuthController->_render('App\\Views\\auth\\login', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 04:30:34 --> Use of undefined constant baseurl - assumed 'baseurl' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\auth\login.php on line 13.
+ 1 APPPATH\Views\auth\login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant baseurl - assumed \'baseurl\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Views\\auth\\login.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Views\\auth\\login', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(429): view('App\\Views\\auth\\login', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(57): Myth\Auth\Controllers\AuthController->_render('App\\Views\\auth\\login', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 04:31:10 --> Invalid file: template/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/footer.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/footer', null, true)
+ 3 APPPATH\Views\auth\login.php(132): CodeIgniter\View\View->include('template/footer')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('App\\Views\\auth\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(429): view('App\\Views\\auth\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(57): Myth\Auth\Controllers\AuthController->_render('App\\Views\\auth\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 04:38:45 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-06-10 04:39:59 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-06-10 04:40:36 --> MySQL server has gone away
+ERROR - 2022-06-10 04:41:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-10 04:44:21 --> Undefined class constant 'Myth\Auth\Authentication\Passwords\ValidationRules::clas'
+in SYSTEMPATH\Config\Factories.php on line 126.
+ 1 SYSTEMPATH\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\Config\Services.php(692): config('Validation')
+ 3 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::validation(null, false)
+ 4 SYSTEMPATH\BaseModel.php(298): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 5 SYSTEMPATH\Model.php(140): CodeIgniter\BaseModel->__construct(null)
+ 6 SYSTEMPATH\Config\Factories.php(126): CodeIgniter\Model->__construct(Object(CodeIgniter\Database\MySQLi\Connection))
+ 7 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('Myth\\Auth\\Models\\UserModel', [...], null)
+ 9 VENDORPATH\myth\auth\src\Config\Services.php(27): model('Myth\\Auth\\Models\\UserModel')
+10 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication('local', null, null, false)
+11 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('authentication', [...])
+12 VENDORPATH\myth\auth\src\Config\Services.php(24): CodeIgniter\Config\BaseService::getSharedInstance('authentication', 'local', null, null)
+13 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication()
+14 SYSTEMPATH\Common.php(960): CodeIgniter\Config\BaseService::__callStatic('authentication', [])
+15 VENDORPATH\myth\auth\src\Controllers\AuthController.php(30): service('authentication')
+16 SYSTEMPATH\CodeIgniter.php(860): Myth\Auth\Controllers\AuthController->__construct()
+17 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 04:44:45 --> Undefined class constant 'Myth\Auth\Authentication\Passwords\ValidationRules::clas'
+in SYSTEMPATH\Config\Factories.php on line 126.
+ 1 SYSTEMPATH\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\Config\Services.php(692): config('Validation')
+ 3 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::validation(null, false)
+ 4 SYSTEMPATH\BaseModel.php(298): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 5 SYSTEMPATH\Model.php(140): CodeIgniter\BaseModel->__construct(null)
+ 6 SYSTEMPATH\Config\Factories.php(126): CodeIgniter\Model->__construct(Object(CodeIgniter\Database\MySQLi\Connection))
+ 7 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('Myth\\Auth\\Models\\UserModel', [...], null)
+ 9 VENDORPATH\myth\auth\src\Config\Services.php(27): model('Myth\\Auth\\Models\\UserModel')
+10 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication('local', null, null, false)
+11 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('authentication', [...])
+12 VENDORPATH\myth\auth\src\Config\Services.php(24): CodeIgniter\Config\BaseService::getSharedInstance('authentication', 'local', null, null)
+13 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication()
+14 SYSTEMPATH\Common.php(960): CodeIgniter\Config\BaseService::__callStatic('authentication', [])
+15 VENDORPATH\myth\auth\src\Controllers\AuthController.php(30): service('authentication')
+16 SYSTEMPATH\CodeIgniter.php(860): Myth\Auth\Controllers\AuthController->__construct()
+17 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 04:55:29 --> Tablespace for table '`ci-crud`.`auth_groups_users`' exists. Please DISCARD the tablespace before IMPORT
+CRITICAL - 2022-06-10 05:01:21 --> Undefined class constant 'Myth\Auth\Authentication\Passwords\ValidationRules::clas'
+in SYSTEMPATH\Config\Factories.php on line 126.
+ 1 SYSTEMPATH\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 2 SYSTEMPATH\Config\Services.php(692): config('Validation')
+ 3 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\Services::validation(null, false)
+ 4 SYSTEMPATH\BaseModel.php(298): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 5 SYSTEMPATH\Model.php(140): CodeIgniter\BaseModel->__construct(null)
+ 6 SYSTEMPATH\Config\Factories.php(126): CodeIgniter\Model->__construct(Object(CodeIgniter\Database\MySQLi\Connection))
+ 7 SYSTEMPATH\Config\Factories.php(83): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 SYSTEMPATH\Common.php(811): CodeIgniter\Config\Factories::models('Myth\\Auth\\Models\\UserModel', [...], null)
+ 9 VENDORPATH\myth\auth\src\Config\Services.php(27): model('Myth\\Auth\\Models\\UserModel')
+10 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication('local', null, null, false)
+11 SYSTEMPATH\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('authentication', [...])
+12 VENDORPATH\myth\auth\src\Config\Services.php(24): CodeIgniter\Config\BaseService::getSharedInstance('authentication', 'local', null, null)
+13 SYSTEMPATH\Config\BaseService.php(251): Myth\Auth\Config\Services::authentication()
+14 SYSTEMPATH\Common.php(960): CodeIgniter\Config\BaseService::__callStatic('authentication', [])
+15 VENDORPATH\myth\auth\src\Controllers\AuthController.php(30): service('authentication')
+16 SYSTEMPATH\CodeIgniter.php(860): Myth\Auth\Controllers\AuthController->__construct()
+17 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 05:01:48 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 465, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-06-10 05:08:07 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Views\template\navbar.php on line 129.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/navbar', null, true)
+ 3 APPPATH\Views\home.php(4): CodeIgniter\View\View->include('template/navbar')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 7 APPPATH\Controllers\Home.php(10): view('home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 05:28:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+ERROR - 2022-06-10 05:29:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+ERROR - 2022-06-10 05:30:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+ERROR - 2022-06-10 05:30:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+ERROR - 2022-06-10 05:31:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+ERROR - 2022-06-10 05:31:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`reset_hash` varchar(255) NULL...' at line 6
+CRITICAL - 2022-06-10 06:18:58 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:21:42 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:22:03 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:24:30 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:24:47 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:24:51 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:16 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:25 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:32 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:37 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:43 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:26:52 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:27:03 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:27:07 --> Trying to get property 'username' of non-object
+in APPPATH\Views\user\index.php on line 8.
+ 1 APPPATH\Views\user\index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'APPPATH\\Views\\user\\index.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:27:10 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 06:31:54 --> syntax error, unexpected '?>', expecting ')'
+in APPPATH\Views\user\index.php on line 8.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 07:16:45 --> Trying to get property 'profile' of non-object
+in APPPATH\Views\user\index.php on line 28.
+ 1 APPPATH\Views\user\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'profile\' of non-object', 'APPPATH\\Views\\user\\index.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 5 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 07:59:03 --> Array to string conversion
+in APPPATH\Views\template\navbar.php on line 120.
+ 1 APPPATH\Views\template\navbar.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\template\\navbar.php', 120, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/navbar', null, true)
+ 5 APPPATH\Views\user\index.php(4): CodeIgniter\View\View->include('template/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 9 APPPATH\Controllers\User.php(10): view('user/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 07:59:18 --> Call to undefined function getRoles()
+in APPPATH\Views\template\navbar.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/navbar', null, true)
+ 4 APPPATH\Views\user\index.php(4): CodeIgniter\View\View->include('template/navbar')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 8 APPPATH\Controllers\User.php(10): view('user/index', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 08:00:07 --> Undefined offset: 0
+in APPPATH\Views\template\navbar.php on line 117.
+ 1 APPPATH\Views\template\navbar.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\template\\navbar.php', 117, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/navbar', null, true)
+ 5 APPPATH\Views\user\index.php(4): CodeIgniter\View\View->include('template/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/index', [], true)
+ 9 APPPATH\Controllers\User.php(10): view('user/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->index()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 09:06:39 --> Unknown column 'auth_groups.user_id' in 'on clause'
+CRITICAL - 2022-06-10 09:06:39 --> Unknown column 'auth_groups.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `users`.`id` as `userid`, `username`, `email`, `fullname`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`user_id` = `auth_groups_user`.`group_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`id` as `userid`, `username`, `email`, `fullname`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`user_id` = `auth_groups_user`.`group_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`id` as `userid`, `username`, `email`, `fullname`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`user_id` = `auth_groups_user`.`group_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`id` as `userid`, `username`, `email`, `fullname`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`user_id` = `auth_groups_user`.`group_id`', [], false)
+ 5 APPPATH\Controllers\Admin.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 09:08:06 --> Unknown column 'auth_groups_user.group_id' in 'on clause'
+CRITICAL - 2022-06-10 09:08:06 --> Unknown column 'auth_groups_user.group_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `users`.`id` as `userid`, `username`, `email`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`id` = `auth_groups_user`.`group_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`.`id` as `userid`, `username`, `email`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`id` = `auth_groups_user`.`group_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`.`id` as `userid`, `username`, `email`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`id` = `auth_groups_user`.`group_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`id` as `userid`, `username`, `email`, `name`
+FROM `users`
+JOIN `auth_groups_users` ON `auth_groups_users`.`user_id` = `users`.`id`
+JOIN `auth_groups` ON `auth_groups`.`id` = `auth_groups_user`.`group_id`', [], false)
+ 5 APPPATH\Controllers\Admin.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:00:44 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 3.
+ 1 APPPATH\Views\admin\detail.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:01:33 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 1.
+ 1 APPPATH\Views\admin\detail.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:01:41 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 1.
+ 1 APPPATH\Views\admin\detail.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:01:50 --> Undefined index: user_profile
+in APPPATH\Views\admin\detail.php on line 1.
+ 1 APPPATH\Views\admin\detail.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_profile', 'APPPATH\\Views\\admin\\detail.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:02:45 --> Trying to get property 'properties' of non-object
+in APPPATH\Views\admin\detail.php on line 2.
+ 1 APPPATH\Views\admin\detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'properties\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:02:52 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 2.
+ 1 APPPATH\Views\admin\detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:02:56 --> Trying to get property 'userid' of non-object
+in APPPATH\Views\admin\detail.php on line 2.
+ 1 APPPATH\Views\admin\detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'userid\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:03:16 --> Trying to get property 'user_pfp' of non-object
+in APPPATH\Views\admin\detail.php on line 2.
+ 1 APPPATH\Views\admin\detail.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_pfp\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:03:25 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 5.
+ 1 APPPATH\Views\admin\detail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:03:42 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 5.
+ 1 APPPATH\Views\admin\detail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:04:29 --> Trying to get property 'user_profile' of non-object
+in APPPATH\Views\admin\detail.php on line 5.
+ 1 APPPATH\Views\admin\detail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'user_profile\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:05:27 --> Undefined property: stdClass::$user_profile
+in APPPATH\Views\admin\detail.php on line 3.
+ 1 APPPATH\Views\admin\detail.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_profile', 'APPPATH\\Views\\admin\\detail.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:05:48 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\admin\detail.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 4 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 10:05:58 --> Trying to get property 'email' of non-object
+in APPPATH\Views\admin\detail.php on line 8.
+ 1 APPPATH\Views\admin\detail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'email\' of non-object', 'APPPATH\\Views\\admin\\detail.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 11:49:11 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+in APPPATH\Controllers\Admin.php on line 81.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 11:49:21 --> Unknown column 'i' in 'where clause'
+CRITICAL - 2022-06-10 11:49:21 --> Unknown column 'i' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `users`
+WHERE `i` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `users`
+WHERE `i` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `users`
+WHERE `i` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `users`
+WHERE `i` = :i:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(70): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->delete('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 11:55:19 --> Unknown column 'i' in 'where clause'
+CRITICAL - 2022-06-10 11:55:19 --> Unknown column 'i' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `users`
+WHERE `i` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `users`
+WHERE `i` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `users`
+WHERE `i` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `users`
+WHERE `i` = :i:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(70): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->delete('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 11:55:27 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$delete
+in APPPATH\Controllers\Admin.php on line 78.
+ 1 APPPATH\Controllers\Admin.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Builder::$delete', 'APPPATH\\Controllers\\Admin.php', 78, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 12:04:23 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+in APPPATH\Views\admin\userlist.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/userlist', [], true)
+ 3 APPPATH\Controllers\Admin.php(37): view('admin/userlist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->userList()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-10 20:49:16 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-10 20:49:16 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 21:16:21 --> Undefined offset: 0
+in APPPATH\Views\admin\detail.php on line 10.
+ 1 APPPATH\Views\admin\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 21:17:19 --> Undefined index: HTTP_X_REQUESTED_WITH
+in APPPATH\Views\admin\detail.php on line 5.
+ 1 APPPATH\Views\admin\detail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: HTTP_X_REQUESTED_WITH', 'APPPATH\\Views\\admin\\detail.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 21:28:36 --> Undefined offset: 0
+in APPPATH\Views\admin\detail.php on line 12.
+ 1 APPPATH\Views\admin\detail.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\detail.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 21:28:36 --> Undefined offset: 0
+in APPPATH\Views\admin\detail.php on line 12.
+ 1 APPPATH\Views\admin\detail.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\detail.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:06 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:31 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:31 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:32 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:32 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:33 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:06:34 --> Trying to get property 'request' of non-object
+in APPPATH\Controllers\Admin.php on line 43.
+ 1 APPPATH\Controllers\Admin.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'request\' of non-object', 'APPPATH\\Controllers\\Admin.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:11:15 --> Undefined index: status
+in APPPATH\Views\admin\userlist.php on line 89.
+ 1 APPPATH\Views\admin\userlist.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: status', 'APPPATH\\Views\\admin\\userlist.php', 89, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/userlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(37): view('admin/userlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:53:17 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin/userlist', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 22:53:39 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin/userlist', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:30:50 --> Too few arguments to function Myth\Auth\Entities\User::ban(), 0 passed in C:\xampp\htdocs\ci-crud\app\Views\user\profile.php on line 6 and exactly 1 expected
+in VENDORPATH\myth\auth\src\Entities\User.php on line 159.
+ 1 APPPATH\Views\user\profile.php(6): Myth\Auth\Entities\User->ban()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(16): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:37:14 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:37:42 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('9')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:37:43 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('8')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:37:44 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('4')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:37:44 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:39:19 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:39:59 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:01 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:06 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:07 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:19 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:20 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:21 --> Undefined property: stdClass::$status_message
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 APPPATH\Views\admin\detail.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_message', 'APPPATH\\Views\\admin\\detail.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-10 23:40:50 --> Call to undefined method stdClass::isBanned()
+in APPPATH\Views\admin\detail.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/detail', [], true)
+ 4 APPPATH\Controllers\Admin.php(63): view('admin/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->detail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

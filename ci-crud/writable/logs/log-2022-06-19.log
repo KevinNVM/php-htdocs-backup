@@ -1,0 +1,225 @@
+CRITICAL - 2022-06-19 14:30:35 --> Undefined variable: notifs
+in APPPATH\Views\template\navbar.php on line 41.
+ 1 APPPATH\Views\template\navbar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: notifs', 'APPPATH\\Views\\template\\navbar.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/navbar', null, true)
+ 5 APPPATH\Views\admin\userlist.php(5): CodeIgniter\View\View->include('template/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\userlist.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/userlist', [], true)
+ 9 APPPATH\Controllers\Admin.php(71): view('admin/userlist', [...])
+10 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->userList()
+11 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 14:50:56 --> Too few arguments to function App\Controllers\Admin::getNotif(), 0 passed in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->getNotif()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 14:52:37 --> Too few arguments to function App\Controllers\Admin::getNotif(), 0 passed in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->getNotif()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 14:52:48 --> Undefined variable: notif
+in APPPATH\Views\admin\notiflist.php on line 6.
+ 1 APPPATH\Views\admin\notiflist.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: notif', 'APPPATH\\Views\\admin\\notiflist.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notiflist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notiflist', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('admin/notiflist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->getNotif('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 14:52:58 --> Trying to get property 'notif_head' of non-object
+in APPPATH\Views\admin\notiflist.php on line 6.
+ 1 APPPATH\Views\admin\notiflist.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'notif_head\' of non-object', 'APPPATH\\Views\\admin\\notiflist.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notiflist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notiflist', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('admin/notiflist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->getNotif('2')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 14:53:41 --> Undefined variable: title
+in APPPATH\Views\template\main.php on line 28.
+ 1 APPPATH\Views\template\main.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\template\\main.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('template/main', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notiflist', [], true)
+ 6 APPPATH\Controllers\Admin.php(49): view('admin/notiflist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->getNotif('2')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-19 16:52:16 --> Column 'notif_head' cannot be null
+CRITICAL - 2022-06-19 16:52:16 --> Column 'notif_head' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (NULL, NULL, \'2022-06-19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (NULL, NULL, \'2022-06-19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (NULL, NULL, \'2022-06-19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (:notif_head:, :notif_body:, :created_at:)', [...], false)
+ 5 APPPATH\Models\NotificationsModel.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(60): App\Models\NotificationsModel->setNotif(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->newNotification()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 16:56:52 --> Undefined variable: session
+in APPPATH\Views\admin\notifcenter.php on line 112.
+ 1 APPPATH\Views\admin\notifcenter.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\admin\\notifcenter.php', 112, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notifcenter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notifcenter', [], true)
+ 5 APPPATH\Controllers\Admin.php(32): view('admin/notifcenter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->notifCenter()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-19 16:57:49 --> Column 'notif_body' cannot be null
+CRITICAL - 2022-06-19 16:57:49 --> Column 'notif_body' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (\'test notifikasi\', NULL, \'2022-06-19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (\'test notifikasi\', NULL, \'2022-06-19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (\'test notifikasi\', NULL, \'2022-06-19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_at`) VALUES (:notif_head:, :notif_body:, :created_at:)', [...], false)
+ 5 APPPATH\Models\NotificationsModel.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(61): App\Models\NotificationsModel->setNotif('test notifikasi', null)
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->newNotification()
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 17:05:28 --> Undefined variable: validation
+in APPPATH\Views\admin\notifcenter.php on line 19.
+ 1 APPPATH\Views\admin\notifcenter.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\admin\\notifcenter.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notifcenter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notifcenter', [], true)
+ 5 APPPATH\Controllers\Admin.php(33): view('admin/notifcenter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->notifCenter()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 17:05:50 --> Undefined property: CodeIgniter\Validation\Validation::$getError
+in APPPATH\Views\admin\notifcenter.php on line 23.
+ 1 APPPATH\Views\admin\notifcenter.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Validation\\Validation::$getError', 'APPPATH\\Views\\admin\\notifcenter.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notifcenter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notifcenter', [], true)
+ 5 APPPATH\Controllers\Admin.php(34): view('admin/notifcenter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->notifCenter()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 17:17:27 --> Class 'Services' not found
+in APPPATH\Views\admin\notifcenter.php on line 1.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notifcenter', [], true)
+ 4 APPPATH\Controllers\Admin.php(34): view('admin/notifcenter', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->notifCenter()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 17:29:49 --> Undefined variable: validation
+in APPPATH\Views\admin\notifcenter.php on line 20.
+ 1 APPPATH\Views\admin\notifcenter.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\admin\\notifcenter.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notifcenter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/notifcenter', [], true)
+ 5 APPPATH\Controllers\Admin.php(33): view('admin/notifcenter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->notifCenter()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 18:03:16 --> Object of class Myth\Auth\Entities\User could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_by`, `created_at`) VALUES (:notif_head:, :notif_body:, :created_by:, :created_at:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_by`, `created_at`) VALUES (:notif_head:, :notif_body:, :created_by:, :created_at:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `notifications` (`notif_head`, `notif_body`, `created_by`, `created_at`) VALUES (:notif_head:, :notif_body:, :created_by:, :created_at:)', [...], false)
+ 6 APPPATH\Models\NotificationsModel.php(44): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\Admin.php(81): App\Models\NotificationsModel->setNotif('asdl;ihas', 'als;kdas;dkl
+')
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->newNotification()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-19 21:17:49 --> Duplicate entry 'kevindinfo6@gmail.com' for key 'email'
+CRITICAL - 2022-06-19 21:17:49 --> Duplicate entry 'kevindinfo6@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `fullname` = :fullname:, `username` = :username:, `force_pass_reset` = :force_pass_reset:, `active` = :active:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(64): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Admin.php(182): App\Models\AdminModel->editUser()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->editUser('2')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-19 21:18:15 --> Duplicate entry 'kevinrg' for key 'username'
+CRITICAL - 2022-06-19 21:18:15 --> Duplicate entry 'kevinrg' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `fullname` = :fullname:, `username` = :username:, `force_pass_reset` = :force_pass_reset:, `active` = :active:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(64): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Admin.php(182): App\Models\AdminModel->editUser()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->editUser('2')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-19 21:19:12 --> Duplicate entry 'kevindinfo6@gmail.com' for key 'email'
+CRITICAL - 2022-06-19 21:19:12 --> Duplicate entry 'kevindinfo6@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `email` = \'kevindinfo6@gmail.com\', `fullname` = \'Kevin Darmawan\', `username` = \'kevinrg\', `force_pass_reset` = \'0\', `active` = \'0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `email` = :email:, `fullname` = :fullname:, `username` = :username:, `force_pass_reset` = :force_pass_reset:, `active` = :active:', [...], false)
+ 5 APPPATH\Models\AdminModel.php(64): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Admin.php(182): App\Models\AdminModel->editUser()
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->editUser('2')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 21:41:40 --> Too few arguments to function App\Controllers\Admin::banUser(), 0 passed in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 187.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->banUser()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-19 21:44:13 --> Too few arguments to function App\Controllers\Admin::banUser(), 1 passed in C:\xampp\htdocs\ci-crud\vendor\codeigniter4\framework\system\CodeIgniter.php on line 898 and exactly 2 expected
+in APPPATH\Controllers\Admin.php on line 187.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->banUser('3')
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -1,0 +1,50 @@
+@import url('./fonts.css');
+
+* {
+    font-family: 'Grandstander', 'Montserrat', cursive, Arial, Helvetica, sans-serif;
+    transition: all .5s;
+}
+
+body {
+    background-color: #101820;
+}
+
+h1 {
+    font-size: 9rem;
+    color: #F2AA4C;
+}
+
+h1:hover {
+    color: #F2AA4C;
+    text-shadow: 3px 4px #f2aa4c93;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #F2AA4C;
+}
+
+h3:hover {
+    color: #F2AA4C;
+    text-shadow: 2px 2px #f2aa4c93;
+}
+
+p {
+    color: #F2AA4C;
+}
+
+a {
+    font-size: larger;
+    color: #101820;
+    background-color: #F2AA4C;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+}
+
+a:hover {
+    color: #101820;
+    background-color: #c98b38;
+    border: 4px solid #F2AA4C;
+}

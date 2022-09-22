@@ -1,0 +1,24 @@
+[
+  {
+    "nama": "Kevin Darmawan",
+    "umur": 12,
+    "NISN": "01289367",
+    "lulus": false,
+    "hobby": ["coding", "gaming"],
+    "pembimging": {
+      "pembimging1": "Asep Jerebu",
+      "pembimging2": "Black Shyap"
+    }
+  },
+  {
+    "nama": "Kevin Darmawan 2",
+    "umur": 12,
+    "NISN": "01289367",
+    "lulus": false,
+    "hobby": ["coding", "gaming"],
+    "pembimging": {
+      "pembimging1": "Asep Jerebu",
+      "pembimging2": "Black Shyap"
+    }
+  }
+]

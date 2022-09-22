@@ -1,0 +1,75 @@
+/*printing style*/
+		
+/*
+body {
+			background-color: #131516;
+			color: #d8d4cf;
+			margin: 1px;
+			font-family: arial;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 20%;
+		}
+		a {
+			color: whitesmoke;
+			text-decoration: none;
+		}
+		a:hover {
+			color: darkgray;
+		}
+		.titel {
+			display: inline-flex;
+			margin: 10px;
+			
+		}
+		.button-my {
+			display: inline-flex;
+			margin: 0px;
+			float: right;
+			padding-top:32px;
+			font-size: large;
+		}
+		.btn-new {
+			font-size: large;
+			display: inline-flex;
+		}
+		.jb50 {
+			background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color: whitesmoke;
+		}
+		.pagingman {
+			display: inline;
+		}
+		
+
+*/
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: black;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #131516;
+  color: whitesmoke;
+}
+
+
+#scrollTopBtn:hover {
+  background-color: lightgrey;
+  color: black;
+}
+.bg-light {
+	background-color: #e3f2fd;
+
+}

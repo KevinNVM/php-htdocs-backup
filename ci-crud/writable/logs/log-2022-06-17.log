@@ -1,0 +1,228 @@
+ERROR - 2022-06-17 10:03:34 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-17 10:03:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 10:06:32 --> Trying to get property 'password_hash' of non-object
+in VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php on line 165.
+ 1 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'password_hash\' of non-object', 'VENDORPATH\\myth\\auth\\src\\Authentication\\LocalAuthenticator.php', 165, [...])
+ 2 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 3 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 10:06:52 --> Trying to get property 'password_hash' of non-object
+in VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php on line 165.
+ 1 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'password_hash\' of non-object', 'VENDORPATH\\myth\\auth\\src\\Authentication\\LocalAuthenticator.php', 165, [...])
+ 2 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 3 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 10:07:16 --> Trying to get property 'password_hash' of non-object
+in VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php on line 165.
+ 1 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'password_hash\' of non-object', 'VENDORPATH\\myth\\auth\\src\\Authentication\\LocalAuthenticator.php', 165, [...])
+ 2 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 3 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 4 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 10:07:29 --> Call to a member function generateResetHash() on array
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 249.
+ 1 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptForgot()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 11:28:41 --> Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$error
+in APPPATH\Models\ProfileModel.php on line 50.
+ 1 APPPATH\Controllers\User.php(34): App\Models\ProfileModel->editProfile('6')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('6')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 17:31:57 -->  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('ROOTPATH\\public')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('user_profile', 'user_profile', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(44): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 17:33:29 --> Array to string conversion
+in APPPATH\Views\user\profile.php on line 164.
+ 1 APPPATH\Views\user\profile.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\user\\profile.php', 164, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 18:39:40 --> Undefined index: head
+in APPPATH\Views\user\profile.php on line 168.
+ 1 APPPATH\Views\user\profile.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: head', 'APPPATH\\Views\\user\\profile.php', 168, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 18:41:28 --> Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$error
+in APPPATH\Models\ProfileModel.php on line 32.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-17 18:43:28 --> Unknown column 'username1' in 'where clause'
+CRITICAL - 2022-06-17 18:43:28 --> Unknown column 'username1' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username1` = \'kevinrf\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username1` = \'kevinrf\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username1` = \'kevinrf\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `fullname` = :fullname:, `email` = :email:, `user_profile` = :user_profile:
+WHERE `username1` = :username1:', [...], false)
+ 5 APPPATH\Models\ProfileModel.php(44): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-17 18:43:48 --> Table 'ci_crud.useer' doesn't exist
+CRITICAL - 2022-06-17 18:43:48 --> Table 'ci_crud.useer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `useer` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username` = \'kevinrf\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `useer` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username` = \'kevinrf\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `useer` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\'
+WHERE `username` = \'kevinrf\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `useer` SET `fullname` = :fullname:, `email` = :email:, `user_profile` = :user_profile:
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\ProfileModel.php(44): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-17 18:49:16 --> Unknown column 'last_updated' in 'field list'
+CRITICAL - 2022-06-17 18:49:16 --> Unknown column 'last_updated' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\', `last_updated` = \'2022-06-17 18:49:16\'
+WHERE `username` = \'kevinrf\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\', `last_updated` = \'2022-06-17 18:49:16\'
+WHERE `username` = \'kevinrf\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `fullname` = \'Made Kevin Darmawan\', `email` = \'personal.kevindarmawan@gmail.com\', `user_profile` = \'img_avatar1.png\', `last_updated` = \'2022-06-17 18:49:16\'
+WHERE `username` = \'kevinrf\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `fullname` = :fullname:, `email` = :email:, `user_profile` = :user_profile:, `last_updated` = :last_updated:
+WHERE `username` = :username:', [...], false)
+ 5 APPPATH\Models\ProfileModel.php(46): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 7 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 8 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:17:08 --> No file was uploaded.(4)
+in APPPATH\Models\ProfileModel.php on line 38.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:20:15 --> No file was uploaded.(4)
+in APPPATH\Models\ProfileModel.php on line 38.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:20:52 --> No file was uploaded.
+in APPPATH\Models\ProfileModel.php on line 38.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:21:07 --> No file was uploaded.
+in APPPATH\Models\ProfileModel.php on line 38.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:21:17 --> 
+in APPPATH\Models\ProfileModel.php on line 38.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 19:21:48 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Models\ProfileModel.php(37): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\img', 'img_avatar1.png')
+ 3 APPPATH\Controllers\User.php(59): App\Models\ProfileModel->editProfile('kevinrf')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\User->editProfile('kevinrf')
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 23:40:32 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin/notifications_center', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-17 23:40:55 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 64.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Filters\Filters->run('admin/notifications_center', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

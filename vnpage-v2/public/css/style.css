@@ -1,0 +1,39 @@
+.card {
+    transform: scale(.99);
+    transition: all 0.2s;
+    opacity: 95%;
+}
+
+.card:hover {
+    z-index: 10000;
+    transform: scale(.96);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.btn-teal {
+    background-color: var(--bs-teal);
+    border-color: #15b082;
+}
+
+.btn-teal:hover {
+    background-color: var(--bs-teal);
+    border-color: #15b082;
+    opacity: 70%;
+}
+
+.btn-teal:active {
+    background-color: var(--bs-teal);
+    border: solid 3px #15b082;
+    border-color: #15b082;
+    opacity: 70%;
+}
+
+.navbar-container .btn {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.navbar-container .btn:hover {
+    transform: scale(1.3);
+}

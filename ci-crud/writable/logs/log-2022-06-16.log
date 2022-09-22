@@ -1,0 +1,18 @@
+ERROR - 2022-06-16 19:35:28 --> MySQL server has gone away
+CRITICAL - 2022-06-16 19:35:28 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `auth_logins` (`ip_address`, `email`, `user_id`, `date`, `success`) VALUES (\'::1\', \'kevinrf\', NULL, \'2022-06-16 19:35:15\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `auth_logins` (`ip_address`, `email`, `user_id`, `date`, `success`) VALUES (\'::1\', \'kevinrf\', NULL, \'2022-06-16 19:35:15\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `auth_logins` (`ip_address`, `email`, `user_id`, `date`, `success`) VALUES (\'::1\', \'kevinrf\', NULL, \'2022-06-16 19:35:15\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auth_logins` (`ip_address`, `email`, `user_id`, `date`, `success`) VALUES (:ip_address:, :email:, :user_id:, :date:, :success:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(219): CodeIgniter\Model->insert([...])
+ 9 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(26): Myth\Auth\Authentication\AuthenticationBase->recordLoginAttempt('kevinrf', '::1', null, false)
+10 VENDORPATH\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+11 SYSTEMPATH\CodeIgniter.php(898): Myth\Auth\Controllers\AuthController->attemptLogin()
+12 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

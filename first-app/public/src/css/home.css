@@ -1,0 +1,101 @@
+@import url('./colors.css');
+@import url('./fonts.css');
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-link {
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    
+a.nav-link.navigation:hover {
+    transform: scale(1.15) translateX(30px);
+}
+  }
+
+.nav-link:hover {
+    color: white;
+    transform: scale(1.125);
+}
+
+.title {
+    transition: all .5s;
+}
+
+.title:hover {
+    transform: scale(1.05);
+    text-shadow: 2px 2px darkgray;
+}
+
+p {
+    transition: all .2s;
+}
+
+p.phar:hover {
+    transform: scale(1.02);
+}
+
+a.browse {
+    color: var(--primary);
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
+    border: 2px solid #F2AA4C;
+    transition: all 500ms;
+}
+
+a.browse:hover {
+    color: var(--secondary);
+}
+
+a.browse:active {
+    opacity: 80%;
+}
+
+a.links {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a.links:active {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+a.links:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+.nav-footer {
+    transition: all .5s;
+}
+
+.nav-footer:hover {
+    transform: scale(1.01);
+}

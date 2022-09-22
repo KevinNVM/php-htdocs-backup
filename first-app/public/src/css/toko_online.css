@@ -1,0 +1,40 @@
+div.card {
+  background-color: var(--primary);
+}
+
+
+.card-title, .card-text {
+    color: white; 
+}
+
+a.btn {
+    color: var(--whitesmoke);
+    background-color: var(--secondary);
+}
+
+a.btn:link {
+    color: var(--whitesmoke);
+    background-color: var(--secondary);
+}
+
+a.btn:hover {
+    color: var(--whitesmoke);
+    background-color: var(--primary);
+    border: 1px solid var(--whitesmoke);
+}
+
+a {
+  transition: all .3s;
+}
+
+a.links:hover {
+  transform: translateX(5px);
+}
+
+a.card {
+  text-decoration: none;
+}
+
+ul.bullet-hidden {
+  list-style-type: none;
+}

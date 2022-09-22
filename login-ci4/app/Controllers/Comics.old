@@ -1,0 +1,125 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\ComicsModel;
+use mysqli;
+
+class Comics extends BaseController
+{
+    protected $comicsModel;
+    public function __construct()
+    {
+        $this->comicsModel = new ComicsModel();
+    }
+
+    public function index()
+    {
+        $data = [
+            'tabs' => 'list',
+            'title' => 'Comics',
+            'comics' => $this->comicsModel->getKomik()
+    ];
+
+        // WRONG USES
+        // $db = \Config\Database::connect();
+        // $comic = $db->query("SELECT * FROM comics");
+        // foreach ($comic->getResultArray() as $row) {
+        //     d($row);
+        // };
+
+
+        return view('comics/index', $data);
+    }
+
+    public function create()
+    {
+        
+        $data = [
+            'tabs' => 'new',
+            'title' => 'Add New Comics',
+            'validation' => \Config\Services::validation()
+        ];
+
+        return view('comics/create', $data);
+    }
+
+    public function details($slug)
+    {
+        $comic = $this->comicsModel->getKomik($slug);
+
+        // Jika Komik tidak ada di tabel
+        if (empty($comic)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Unknown Comics "' . $slug . '"');
+        }
+        
+        $data = [
+            'tabs' => 'details',
+            'title' => $comic['title']."'s ". 'Details',
+            'comic' => $comic
+        ];
+        // dd($comic);
+        
+        return view('comics/details', $data);
+    }
+
+    public function save()
+    {
+        
+        // input validation
+        $val = $this->validate([
+            'title' => [
+                'rules' => 'required|is_unique[comics.title]',
+                'errors' => [
+                    'required' => '{field} komik tidak boleh kosong!',
+                    'is_unique' => '{field} komik sudah terdaftar'
+                ]
+            ],
+            'cover' => [
+                'rules' => 'uploaded[cover]|max_size[cover,1048]|is_image[cover]|mime_in[cover,image/jpg,image/jpeg,image/png,image/webp]',
+                'errors' => [
+                    'uploaded' => '{field} komik tidak ada!',
+                    'max_size' => 'ukuran {field} komik yang dipilih terlalu besar max=1mb',
+                    'is_image' => '{field} komik yang dipilih bukan gambar',
+                    'mime_in' => '{field} komik yang dipilih bukan gambar'
+                ]
+            ]
+        ]);
+        if (!$val) {
+
+        // $validation = \Config\Services::validation();
+        // session()->setFlashdata('msg', $validation['errors']);
+        // return redirect()->to('/comics/create')->withInput()->with('validation', $validation);
+        return redirect()->to('/comics/create')->withInput();
+        }
+
+        #MOVE UPLOADED FILES TO IMG FOLDER
+        $fileCover = $this->request->getFile('cover');
+        
+        ###############################        
+        // $fileCover->move('img');
+        # get file name
+        // $coverName = $fileCover->getName();
+        ###############################
+        # generate random file name
+        // $coverName = $fileCover->getRandomName();
+
+        $coverName = uniqid() . '.' . $fileCover->getExtension();
+        // move to img folder
+        $fileCover->move('img', $coverName);
+
+        $this->comicsModel->save([
+            'title' => $this->request->getVar('title'),
+            'author' => $this->request->getVar('author'),
+            'publisher' => $this->request->getVar('publisher'),
+            'cover' => $coverName,
+            'slug' => url_title($this->request->getVar('title'), '-', true)
+        ]);
+
+        session()->setFlashdata('err', 'New Comic Has Been Added!');
+
+        return redirect()->to('/comics');
+    }
+
+
+}

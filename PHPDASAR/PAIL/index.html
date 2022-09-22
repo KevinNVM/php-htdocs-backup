@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Dokumen Sekolah & Pelajaran
+	</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+		div.navbar {
+			font-family: Lobster, sans-serif;
+		}
+		div.searchbox {
+
+  			position: absolute;
+  			right: 0px;
+  			width: 300px;
+  			top: 40px;
+
+		}
+		
+		.button {
+  border-radius: 4px;
+  background-color: #6FB1EA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 125px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.button:hover {
+	background-color: #154C7C;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div.header {
+	
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+
+h1#header {
+	text-align: center;
+	left: 	50%;
+}
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+	<table border="0" cellpadding="10" cellspacing="0">
+		<tr>
+		<th><a href="#"><img class="homenavbar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPhWJheo4JKXmaGtlFrDLSkUktVLRdSXB44g&usqp=CA" style="width: 60px; height: 60px;" ></a></th>
+		<th><button class="button"><span class="nav1">E-Book</span></button></th>
+		<th><button class="button"><span class="nav2">Note</span></button></th>
+		<th><button onclick="redirect3()" class="button"><span class="nav3">Misc</span></button></th>
+	</table>
+	</div>
+	<div class="searchbox">
+		<form>
+		<input type="text" name="search" placeholder="Search Something...">
+		<button type="submit" >Search</button>
+		</form>
+	</div>
+	<div class="header">
+		<h1>My WebPage</h1>
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript">
+		function redirect1 () {
+		document.location = "index.html#1"
+		}
+
+		function redirect2 () {
+		document.location = "index.html#2"
+		}
+
+		function redirect3 () {
+		document.location = "index.html#3"
+		}
+
+	</script>
+</body>
+</html>

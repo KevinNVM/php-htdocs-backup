@@ -1,0 +1,38 @@
+
+.nav-brand {
+    text-decoration: none;
+    transition: all .3s;
+  }
+  
+  .nav-brand:hover {
+    transform: scale(1.25);
+  }
+
+.nav-footer {
+    transition: all .5s;
+}
+
+.nav-footer:hover {
+    transform: scale(1.01);
+}
+
+ul.list-none {
+    list-style-type: none;
+}
+
+.card {
+    transition: all .3s;
+}
+
+div.card:hover {
+    transform: scale(1.01);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

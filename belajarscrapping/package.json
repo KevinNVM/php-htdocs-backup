@@ -1,0 +1,19 @@
+{
+  "name": "belajarscrapping",
+  "version": "1.0.0",
+  "description": "belajar membuat scapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scrapper"
+  ],
+  "author": "kevin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "jquery": "^3.6.0"
+  }
+}
